@@ -1,0 +1,32 @@
+{
+  "name": "tailwind-css-starter-theme",
+  "version": "1.0.0",
+  "description": "This is an empty OctoberCMS theme using Tailwind utility-first CSS framework for rapid UI development. https://tailwindcss.com/",
+  "keywords": [
+    "octobercms",
+    "theme",
+    "tailwind"
+  ],
+  "author": "Matej Víťaz <mspiderv@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^5.1",
+    "glob-all": "^3.1.0",
+    "laravel-mix": "^4.0.15",
+    "purgecss-webpack-plugin": "^1.5.0",
+    "sass": "^1.20.1",
+    "sass-loader": "7.*",
+    "tailwindcss": "^1.0.1",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "watch-prod": "npm run production -- --watch",
+    "watch-poll": "npm run watch -- --watch-poll",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  }
+}

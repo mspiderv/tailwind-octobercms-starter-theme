@@ -1,0 +1,21 @@
+==
+<?php
+function onStart()
+{
+    $this->addJs('assets/build/js/app.js');
+    $this->addCss('assets/build/css/app.css');
+}
+?>
+==
+<!doctype html>
+<html>
+    <head>
+        {% partial 'html/head' %}
+    </head>
+<body>
+    {% partial 'site/header' %}
+    {% page %}
+    {% partial 'site/footer' %}
+    {% partial 'html/scripts' %}
+</body>
+</html>
